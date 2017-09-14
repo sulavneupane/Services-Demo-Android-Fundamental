@@ -6,4 +6,4 @@ This Android project has sample imelementations of different types of Services a
 2. Bound Service - Service that is attached with an Android component and get destroyed when the component gets destroyed.
 3. Intent Service - The service that destroys when the task is completed and runs in background thread.
 
-It also includes how to use service to transfer messages in between two different components of Android.
+It also includes how to use service to transfer messages in between two different components of Android. It also implements the way to run our services in different processes.
