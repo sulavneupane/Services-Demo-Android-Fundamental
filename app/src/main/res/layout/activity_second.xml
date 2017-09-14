@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".activities.MyBoundActivity">
+
+    <EditText
+        android:id="@+id/etNumOne"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="42dp"
+        android:text="0"/>
+
+    <EditText
+        android:id="@+id/etNumTwo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAdd"
+        android:layout_alignEnd="@+id/btnSub"
+        android:layout_alignRight="@+id/btnSub"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etNumOne"
+        android:layout_marginTop="67dp"
+        android:onClick="onClickEvent"
+        android:text="Add"/>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnAdd"
+        android:onClick="onClickEvent"
+        android:text="Substract"/>
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:onClick="onClickEvent"
+        android:text="Multiply"/>
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnMul"
+        android:onClick="onClickEvent"
+        android:text="Divide"/>
+
+    <TextView
+        android:id="@+id/txvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNumOne"
+        android:layout_centerHorizontal="true"
+        android:hint="Result"/>
+
+</RelativeLayout>

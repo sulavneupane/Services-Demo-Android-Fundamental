@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nepalicoders.servicesdemo.activities.MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tester"/>
+
+        <Button
+            android:id="@+id/btnStartStartedService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="startStartedService"
+            android:text="Start the Started Service"/>
+
+        <Button
+            android:id="@+id/btnStopStartedService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="stopStartedService"
+            android:text="Stop the Started Service"/>
+
+        <TextView
+            android:id="@+id/txtStartedServiceResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Started Service Result Here"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnStartIntentService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startIntentService"
+            android:text="Start Intent Service"/>
+
+        <TextView
+            android:id="@+id/txtIntentServiceResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Intent Service Result Here"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnMessengerActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToMessengerActivity"
+            android:text="Messenger Activity"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="moveToSecondActivity"
+            android:text="Bound Service Demo Activity"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
